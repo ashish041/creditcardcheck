@@ -39,7 +39,7 @@ func (c *CreditCard) retriveCreditCardType() string {
 	case c.CardNumber[0:2] >= "51" && c.CardNumber[0:2] <= "55" && Len == 16:
 		return "MasterCard"
 	case c.CardNumber[0:1] == "4" && (Len == 13 || Len == 16):
-		return "Visa"
+		return "VISA"
 	default:
 		return "Unknown"
 	}
