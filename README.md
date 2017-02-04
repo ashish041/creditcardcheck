@@ -1,9 +1,9 @@
 # creditcardcheck
-#To install creditcardcheck package run this command in terminal
-#go get github.com/ashish041/creditcardcheck
+To install creditcardcheck package run this command in terminal
+$ go get github.com/ashish041/creditcardcheck
 
 
-
+```
 package main
 
 import (
@@ -32,3 +32,4 @@ func main() {
 		}
 	}
 }
+```
