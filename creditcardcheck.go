@@ -10,10 +10,10 @@ type CreditCard struct {
 }
 
 type CreditCardStatus struct {
-	CardType   string `json:"cardType"`
-	CardNumber string `json:"cardNumber"`
-	CardStatus string `json:"cardStatus"`
-	Error      error  `json:"error"`
+	CardType   string
+	CardNumber string
+	CardStatus string
+	Error      error
 }
 
 func sumOfTwoDigit(a int) (int, error) {
