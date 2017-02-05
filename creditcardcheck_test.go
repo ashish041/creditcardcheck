@@ -1,7 +1,6 @@
 package creditcardcheck
 
 import (
-	//"strconv"
 	"testing"
 )
 
@@ -14,6 +13,9 @@ func TestCheckCreditCard_1(t *testing.T) {
 		Error:      nil,
 	}
 	r := CheckCreditCard(cNum)
+	if r.Error != nil {
+		t.Error("Expecting no error for this check but got error:", r.Error)
+	}
 	if r.CardType != expected.CardType || r.CardStatus != expected.CardStatus || r.CardNumber != expected.CardNumber || r.Error != expected.Error {
 		t.Error(
 			"For", cNum,
@@ -32,6 +34,9 @@ func TestCheckCreditCard_2(t *testing.T) {
 		Error:      nil,
 	}
 	r := CheckCreditCard(cNum)
+	if r.Error != nil {
+		t.Error("Expecting no error for this check but got error:", r.Error)
+	}
 	if r.CardType != expected.CardType || r.CardStatus != expected.CardStatus || r.CardNumber != expected.CardNumber || r.Error != expected.Error {
 		t.Error(
 			"For", cNum,
@@ -50,6 +55,9 @@ func TestCheckCreditCard_3(t *testing.T) {
 		Error:      nil,
 	}
 	r := CheckCreditCard(cNum)
+	if r.Error != nil {
+		t.Error("Expecting no error for this check but got error:", r.Error)
+	}
 	if r.CardType != expected.CardType || r.CardStatus != expected.CardStatus || r.CardNumber != expected.CardNumber || r.Error != expected.Error {
 		t.Error(
 			"For", cNum,
@@ -68,6 +76,9 @@ func TestCheckCreditCard_4(t *testing.T) {
 		Error:      nil,
 	}
 	r := CheckCreditCard(cNum)
+	if r.Error != nil {
+		t.Error("Expecting no error for this check but got error:", r.Error)
+	}
 	if r.CardType != expected.CardType || r.CardStatus != expected.CardStatus || r.CardNumber != expected.CardNumber || r.Error != expected.Error {
 		t.Error(
 			"For", cNum,
@@ -86,6 +97,9 @@ func TestCheckCreditCard_5(t *testing.T) {
 		Error:      nil,
 	}
 	r := CheckCreditCard(cNum)
+	if r.Error != nil {
+		t.Error("Expecting no error for this check but got error:", r.Error)
+	}
 	if r.CardType != expected.CardType || r.CardStatus != expected.CardStatus || r.CardNumber != expected.CardNumber || r.Error != expected.Error {
 		t.Error(
 			"For", cNum,
@@ -104,6 +118,9 @@ func TestCheckCreditCard_6(t *testing.T) {
 		Error:      nil,
 	}
 	r := CheckCreditCard(cNum)
+	if r.Error != nil {
+		t.Error("Expecting no error for this check but got error:", r.Error)
+	}
 	if r.CardType != expected.CardType || r.CardStatus != expected.CardStatus || r.CardNumber != expected.CardNumber || r.Error != expected.Error {
 		t.Error(
 			"For", cNum,
@@ -122,6 +139,9 @@ func TestCheckCreditCard_7(t *testing.T) {
 		Error:      nil,
 	}
 	r := CheckCreditCard(cNum)
+	if r.Error != nil {
+		t.Error("Expecting no error for this check but got error:", r.Error)
+	}
 	if r.CardType != expected.CardType || r.CardStatus != expected.CardStatus || r.CardNumber != expected.CardNumber || r.Error != expected.Error {
 		t.Error(
 			"For", cNum,
@@ -140,6 +160,9 @@ func TestCheckCreditCard_8(t *testing.T) {
 		Error:      nil,
 	}
 	r := CheckCreditCard(cNum)
+	if r.Error != nil {
+		t.Error("Expecting no error for this check but got error:", r.Error)
+	}
 	if r.CardType != expected.CardType || r.CardStatus != expected.CardStatus || r.CardNumber != expected.CardNumber || r.Error != expected.Error {
 		t.Error(
 			"For", cNum,
